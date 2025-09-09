@@ -32,6 +32,7 @@ I made this for myself, but I hope you find it useful too.
 ```bash
 git clone https://github.com/DumbBin/DumbBin.git
 cd DumbBin
+git checkout prod
 ```
 
 2. Install dependencies
@@ -48,8 +49,6 @@ npm start
 
 ### Using Docker
 
-
-1. Build locally
 ```bash
 docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data dumbbin/dumbbin
 ```
