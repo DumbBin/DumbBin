@@ -5,6 +5,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const crypto = require('crypto');
 const cookieParser = require('cookie-parser');
+const RateLimit = require('express-rate-limit');
 const app = express();
 const { getCorsOptions, originValidationMiddleware } = require('./scripts/cors');
 const { convertLogoToPng } = require('./scripts/convert-logo');
@@ -375,7 +376,7 @@ app.post('/api/items', async (req, res) => {
 });
 
 // API route to fetch a shared item by id
-app.get('/api/shared/:id', async (req, res) => {
+app.get('/api/shared/:id', sharedItemRateLimiter, async (req, res) => {
     const { id } = req.params;
     try {
         const data = await fs.readFile(DATA_FILE, 'utf8');
