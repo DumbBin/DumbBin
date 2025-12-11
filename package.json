@@ -1,6 +1,6 @@
 {
   "name": "dumbbin",
-  "version": "1.0.0",
+  "version": "12112025",
   "description": "A stupidly simple pastebin",
   "main": "server.js",
   "scripts": {
@@ -15,8 +15,9 @@
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.18.2"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
