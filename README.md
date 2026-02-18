@@ -30,7 +30,7 @@ I made this for myself, but I hope you find it useful too.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/DumbBin/DumbBin.git
+git clone https://github.com/FrancisLaboratories/DumbBin.git
 cd DumbBin
 git checkout prod
 ```
