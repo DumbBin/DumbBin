@@ -50,7 +50,7 @@ npm start
 ### Using Docker
 
 ```bash
-docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data dumbbin/dumbbin
+docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data francislaboratories/dumbbin
 ```
 
 ### Using Docker Compose
@@ -59,7 +59,7 @@ docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data dumbbin/dumbbin
 ```yaml
 services:
   dumbbin:
-    image: dumbbin/dumbbin
+    image: francislaboratories/dumbbin
     container_name: dumbbin
     restart: unless-stopped
     ports:
