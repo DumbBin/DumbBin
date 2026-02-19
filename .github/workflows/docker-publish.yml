@@ -5,7 +5,7 @@ on:
     types: [published]
 
 env:
-  DOCKER_IMAGE: dumbbin/dumbbin
+  DOCKER_IMAGE: francislaboratories/dumbbin
   PLATFORMS: linux/amd64,linux/arm64
 
 jobs:

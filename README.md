@@ -30,7 +30,7 @@ I made this for myself, but I hope you find it useful too.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/DumbBin/DumbBin.git
+git clone https://github.com/FrancisLaboratories/DumbBin.git
 cd DumbBin
 git checkout prod
 ```
@@ -50,7 +50,7 @@ npm start
 ### Using Docker
 
 ```bash
-docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data dumbbin/dumbbin
+docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data francislaboratories/dumbbin
 ```
 
 ### Using Docker Compose
@@ -59,7 +59,7 @@ docker run --rm -p 3000:3000 -v $(pwd)/data:/app/data dumbbin/dumbbin
 ```yaml
 services:
   dumbbin:
-    image: dumbbin/dumbbin
+    image: francislaboratories/dumbbin
     container_name: dumbbin
     restart: unless-stopped
     ports:
